@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="author" content="http://www.auricletechnologies.com/">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>IJMR - Volume1-Issue1</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="icon" type="image/png" href="http://www.internationaljournalisar.org/images/myicon.jpg" />
+<meta name="description" content="ISAR - International Scientific and Research Journals Journals" />
+<meta name="keywords" content="ISAR - International Scientific and Research Journals Journals" />
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/zerogrid.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/style.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/responsive.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/sitePopUp.css">
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/reveal.css">
+
+<!--menu-->
+<link rel="stylesheet" href="http://www.internationaljournalisar.org/css/ddsmoothmenu.css">
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/jquery.reveal.js"></script>
+<script type="text/javascript" src="http://www.internationaljournalisar.org/js/jquery-1.6.min.js"></script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#dismiss').live('click', function(){
+		$('.output').fadeOut(0);
+	});
+	$('#admorebtn').live('click', function(){
+		$('#morefieldwrap').append('<p><input type="file" name="file[]" multiple="multiple" autocomplete="off" required="required" class="field filefield" /><input type="button" value="Remove" id="rmmorebtn" class="mrbtn" /></p>');
+	});
+	$('#rmmorebtn').live('click', function(){
+		$(this).parent('p').remove();
+	});
+	$('.downloadLink').live('click', function(){
+		var id = $(this).attr('id');
+		$.ajax({
+			type:"POST",
+			url:"http://www.internationaljournalisar.org/IMAGE/",
+			data:"cmd=downloads&id=" + id,
+			cache:false,
+			success: function(){}
+		});
+	});
+	$('#closeSitePopUp').live('click', function(){
+		$('.sitePopUp').fadeOut(0);
+	});
+});
+</script>
+
+
+<script type="text/javascript">
+try {
+} catch(err) {}</script>
+
+<header>
+   <div class="wrap-header zerogrid" style="position:relative;">
+     <img src="http://www.internationaljournalisar.org/images/myicon.jpg" alt="ISAR" width="185" height="200" /><br>
+
+<div class="logocontent" style="left:200px; top:55px; position:absolute; font-size:35px; color:#086A87; text-align:center;">ISAR - International Scientific and Research Journals</div>
+
+</div>
+<!--<div class="logocontent" style="left:350px; top:85px; position:absolute; font-size:25px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">International Journals </p>
+</div>-->
+<div class="logocontent" style="left:395px; top:90px; position:absolute; font-size:18px; color:#000000; text-align:center;"><p style="left:20px"; style="font-size:18px;font-size:5px; color:#18b3e4; margin:8px;">Scholary Peer Reviewed Research Publishing Journals </p></div>
+  </div>
+</header>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71638505-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<div class="clear"></div>
+<div class="zerogrid">
+  <div >
+
+      <ul id="css3menu1" class="topmenu">
+        <li class="topfirst"><a href="http://www.internationaljournalisar.org" style="width:110px;height:8px;line-height:9px; text-align:center;">Welcome</a></li>
+       <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">About ISAR</a>
+	             <ul>
+	    <li><a href="http://www.internationaljournalisar.org/About.html" style="width:110px;height:8px;line-height:9px; text-align:left;">About us</a></li>
+
+	               <li><a href="http://www.internationaljournalisar.org/Indexing.html" style="width:100px;height:8px;line-height:9px; text-align:left;">ISAR Indexing</a></li>
+	             </ul>
+        </li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/callforpaper.html" style="width:120px;height:8px;line-height:9px; text-align:center;">Call For Paper</a> </li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/Journals.html" style="width:120px;height:8px;line-height:9px; text-align:center;">ISAR Journals</a></li>
+        <li class="topmenu"><a  style="width:120px;height:8px;line-height:9px; text-align:center;">For Author</a>
+          <ul>
+                <li class="subfirst"><a href="http://www.internationaljournalisar.org/publication-guidelines.html" style="width:135px;height:8px;line-height:9px; text-align:left;">Publication Guidelines</a></li>
+           <li><a href="http://www.internationaljournalisar.org/PeerReview.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Peer Review</a></li>
+            <li><a href="http://www.internationaljournalisar.org/Publication-Fee.html"  style="width:100px;height:8px;line-height:19px; text-align:left;">Processing Fee</a></li>
+             <li><a href="http://www.internationaljournalisar.org/Submit-Paper.html" style="width:100px;height:8px;line-height:9px; text-align:left;">Submit Your Paper</a></li>
+          </ul>
+        </li>
+
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/faq.html" style="width:100px;height:8px;line-height:9px; text-align:center;">FAQs</a></li>
+        <li class="topmenu"><a href="http://www.internationaljournalisar.org/Contact.html" style="width:110px;height:8px;line-height:9px; text-align:center;">Contact Us</a></li>
+              </ul>
+    </div>
+</div><div class="clear"></div>
+<section id="content">
+  <div class="wrap-content zerogrid">
+
+     <marquee direction="left" scrollamount="3" scrolldelay="3">
+    <a name="up" id="up"></a><strong><font color="#000000">Anybody can submit their paper by mailing at IJACsubmit@gmail.com</font></strong>
+</marquee>
+
+
+	      <div class="clear"></div>
+	  <div id="sidebar" class="right col-1-4">
+  <div class="wrap-col">
+
+<div class="box">
+      <div class="heading">
+        <h2>ISAR - Menu</h2>
+      </div>
+      <div class="content" style="">
+	  					<ul>
+<li><a href="http://www.internationaljournalisar.org/IJMR/index.html" title="Home">Home</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMR/CurrentIssues.html" title="CurrentIssues">CurrentIssues</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMR/Archives.html" title="Archives">Archives</a></li>
+<!--<li><a href="http://www.internationaljournalisar.org/callforpaper.html" title="Call For Paper">Call For Paper</a></li>-->
+<!--<li><a href="http://www.internationaljournalisar.org/IJMR/Topics.html" title="Topics">Topics</a></li>-->
+<!--<li><a href="http://www.internationaljournalisar.org/Indexing.html" title="Indexing">Indexing</a></li>-->
+<li><a href="http://www.internationaljournalisar.org/IJMR/Editorialboard.html" title="Editorial Board">Editorial Board</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMR/images/IJMR-PaperFormat.docx" title="Paper Template">Paper Template</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMR/images/IJMR-CopyrightForm.docx" title=" Copy Right Form">Copy Right Form</a></li>
+ </ul>
+
+
+
+      </div>
+    </div>
+
+
+<div class="box">
+      <div class="heading">
+        <h2>ISAR - Journals</h2>
+      </div>
+      <div class="content" style="">
+<ul>
+<li><a href="http://www.ijretjournal.org/" target="blank" title="ISAR - IJRET">ISAR - International Journal of Research in Engineering Technology</a></li>
+<li><a href="http://www.ijcsejournal.org/" target="blank"  title="ISAR - IJCSE">ISAR - International Journal of Computer science engineering Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMCT/index.html" title="ISAR - IJMCT">ISAR International Journal of Mathematics and Computing Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJPT/index.html" title="ISAR - IJPT"> ISAR International Journal of P2P Network and Techniques</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJECE/index.html" title="ISAR - IJECE">ISAR International Journal of Electronics and Communication Ethics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJEEE/index.html" title="ISAR - IJEEE">ISAR International Journal of Electrical and Electronic Ethics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJAP/index.html" title="ISAR - IJAP<">ISAR International Journal of Advances in Physics</a></li>
+<li><a href="http://www.internationaljournalisar.org/IJMR/index.html" title="ISAR - IJAC">ISAR International Journal of Advances in chemistry</a></li>
+      </div>
+    </div>
+
+
+
+			    <div class="box">
+      <div class="heading">
+        <h2>ISAR - News</h2>
+      </div>
+<marquee scrollamount="2" direction="up" onmouseover="this.stop()"  onmouseout="this.start()" loop="true" width="100%">
+
+          <center> <font color="#086A87">
+					ISAR provides e-certificate of publication to authors.</font>
+					</center><br>
+
+					<center> <font color="#086A87">
+					<a href="http://www.internationaljournalisar.org/callforpaper.html">Call For Paper</a> for Cureent Issues.</font>
+					</center><br>
+
+					<center> <font color="#086A87">
+					 Inviting for Join As Reviewers.</font>
+					</center><br>
+
+                                        <center> <font color="#086A87">
+					 You can submit research article to <a href="http://www.internationaljournalisar.org/callforpaper.html"> respective journal mail id</a>.</font>
+					</center><br>
+
+				</marquee>
+
+
+    </div>
+
+
+	<div class="box">
+      <div class="heading">
+        <h2>Online Visiters</h2>
+      </div>
+		 <br><center><script type="text/javascript" src="http://widget.supercounters.com/flag.js"></script><script type="text/javascript">sc_flag(1160510,"FFFFFF","000000","cccccc",2,10,0,0)</script><br><noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript><br>
+
+
+			  </center>
+
+    </div>
+  </div>
+</div>
+      <!--=========================================contact query=====================================-->
+      <div id="main-content" class="col-3-6">
+        <div class="wrap-col">
+
+	          <article>
+            <div class="heading">
+              <center><h2>ISAR - International Journal of Multidisciplinary Research</h2></center>
+      </div>
+<h2>Volume1 Issue1</h2>
+
+            <div class="content" style="text-align:justify;"><br>
+              <p>
+
+
+<!--table Start -->
+
+<table class="MsoTableGrid" style="max-width: 95%; border-collapse: collapse; border-spacing: 1px; padding: 3px; margin: 10px 0px; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 25px; border: none; background-color: #fffff" border="2" cellspacing="0" cellpadding="2">
+
+<tbody
+        <tr>
+            <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0">
+
+          <div align="center"><strong>S.No.</strong></div></td>
+            <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0">
+
+          <p align="center"><strong><center>Title/Author Name </center></strong></p></td>
+
+           <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0">
+
+          <div align="center"><strong>Page No. </strong></div></td>
+        </tr>
+        <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">1. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Traits of  Magic Realism in Salman Rushdie’s Midnight’s Children</a></strong></p><br>
+              <p class="style2">Authors: A.G.Ananth</p>
+
+<div id="content-dece">
+      <ul>
+
+ <li>[ <a href="#" class="big-link" data-reveal-id="1"><font color="red"> Abstract </font></a> ]
+[ <a href="#" class="big-link" data-reveal-id="2"><font color="red"> cite </font></a>]
+[ <a href="http://www.internationaljournalisar.org/IJMR/Volume1/Issue1/IJMR-V1I1P1.pdf" target="balnk"><font color="red"> PDF </font></a>]</li>
+
+  <div id="1" class="reveal-modal">
+	 <h2>Abstract :-</h2>-.<br /><strong><font color="red">Key word :- </font></strong> -.</p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="2" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">A.G.Ananth, <font color="red"><em><strong>"Traits of  Magic Realism in Salman Rushdie’s Midnight’s Children"</em></font></strong> Vol. 1 - Issue 1 ( Jan - Feb 2017), <strong>ISAR - International Journal of Multidisciplinary Research
+</strong> , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>1-7</strong></div></td>
+        </tr>
+
+         <!--<tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">2. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>The Use of Starch Processing Enzymes in the Food Industry</a></strong></p><br>
+              <p class="style2">Authors: Wasim B. Patel, Ritesh G. Deokar</p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="3"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="4"><font color="red"> cite </font></a>]
+[ <a href="http://www.internationaljournalisar.org/IJMR/Volume1/Issue1/IJAC-V1I1P2.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="3" class="reveal-modal">
+	 <h2>Abstract :-</h2>Man?s usage of enzymes dates back to the earliest times of civilization. Significant human activities in primeval communities such as the production of certain kinds of foods and beverages, and the tanning of hides and skins to produce leather for garments, involved the application of enzyme activities, albeit unintentionally. Though, not until the 19th century with the development of biochemistry and the pioneering work of a number of well-known scientists did the nature of enzymes and how they work initiate to be explained. The nineteen-sixties observed two major revolutions that had a major effect on the enzyme industry: the commercialisation of glucoamylase which catalyses the manufacture of glucose from starch with much greater efficacy than that of the chemical process of acid hydrolysis, and the launch of the first enzyme-containing detergents. In this paper we are going to see starch treating enzymes and their usage in the food production in detail.<br /><strong><font color="red">Key word :- </font></strong>Starch, Enzyme, Food Industry, Amylase, Isomerisation.</font> </strong>.</font></p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="4" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Wasim B. Patel, Ritesh G. Deokar, <font color="red"><em><strong>"The Use of Starch Processing Enzymes in the Food Industry"</em></font></strong> Vol. 1 - Issue 1 ( Sep - Oct 2016), <strong>ISAR International Journal of Advances in chemistry</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>7-13</strong></div></td>
+        </tr>
+
+
+
+  <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">3. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Kinetics of Nitrite ION Catalysed Oxidation of Indigo carmine by Chloramine-T in Acidic Buffer (PH 5.8) Medium</a></strong></p><br>
+              <p class="style2">Authors: Sruthi Reddy , G. Poornachandra Rao
+</p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="5"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="6"><font color="red"> cite </font></a>]
+[ <a href="http://www.internationaljournalisar.org/IJMR/Volume1/Issue1/IJAC-V1I1P3.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="5" class="reveal-modal">
+	<h2>Abstract :-</h2>Indigocarmine or IC (5, 5'-indigodisulfonic acid, disodium salt) is a dye which is used as a redox indicator in analytical chemistry and as a microscopic pigment in biology. The chemistry of IC and its derivatives has been reviewed by Rodd. It is castoff as dye in the textile industry and manufacture of capsules. In surgery, circulatory indigocarmine is used to highlight the urinary tract. IC is sanctioned for use as a food colourant in the United States and Europian countries. Though indigocarmine in solution has been assessed with the help of organic haloamine and other substances. Only very rare kinetic studies are described in literature of this indole derivative.<br /><strong><font color="red">Key word :- </font></strong>Nitrite Ion, oxidation of indigocarmine Chloramine-T, Acidic Buffer Medium..</font> </strong>.</font></p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="6" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Sruthi Reddy , G. Poornachandra Rao, <font color="red"><em><strong>"Kinetics of Nitrite ION Catalysed Oxidation of Indigo carmine by Chloramine-T in Acidic Buffer (PH 5.8) Medium"</em></font></strong> Vol. 1 - Issue 1 ( Sep - Oct 2016), <strong>ISAR International Journal of Advances in chemistry</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>14-19</strong></div></td>
+        </tr>
+
+
+
+<tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">4. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Liquid-Liquid Extraction of Mercury (II) with Dicyclohexano-18-crown-6 and its Application to Industrial Wastes</a></strong></p><br>
+              <p class="style2">Authors: Jaydev.M.Bhavsar ,Nikita Gaikwad</p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="7"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="8"><font color="red"> cite </font></a>]
+[ <a href="http://www.internationaljournalisar.org/IJMR/Volume1/Issue1/IJAC-V1I1P4.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="7" class="reveal-modal">
+	 <h2>Abstract :-</h2>An innovative region specific method is essential to improve an environmentally and economically viable process to address the iron oxide waste problem. One such choice is to create high purity metal oxides for use in pigment, electronic and catalyst manufacturing. Currently, approaches based on liquid-liquid extraction has arisen as a novel and exclusive method for the separation and recovery of metal ions from mineral sources as well as from industrial waste streams in place of the customary pyrometallurgical methods for the reason that of its simplicity, versatility, easy recovery and ready adaptability to scaling up of the procedure. The present work purposes to investigate novel solid waste remediation procedure through resource recovery (metal values) and its reintegration as value added state-of- art products by employing liquid-liquid extraction method.<br /><strong><font color="red">Key word :- </font> </strong> Extraction of Mercury (II), Industrial wastes, EDTA, Chlor-Alkali industry, DC18C6 complex.</p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="8" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Jaydev.M.Bhavsar ,Nikita Gaikwad, <font color="red"><em><strong>"Liquid-Liquid Extraction of Mercury (II) with Dicyclohexano-18-crown-6 and its Application to Industrial Wastes"</em></font></strong> Vol. 1 - Issue 1 ( Sep - Oct 2016), <strong>ISAR International Journal of Advances in chemistry</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>20-24</strong></div></td>
+        </tr>
+
+
+
+ <tr>
+      <td style="width: 70.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center">5. </div></td>
+
+          <td style="width: 1000.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><p align="justify"><strong></strong><strong>Photochemical Treatments of Textile Industries Wastewater</a></strong></p><br>
+              <p class="style2">Authors: Anuradha Teotia, Dr. M. S. Baghel</p>
+
+<div id="content-dece">
+      <ul>
+
+ [<a href="#" class="big-link" data-reveal-id="9"><font color="red"> Abstract </font></a>]
+[ <a href="#" class="big-link" data-reveal-id="10"><font color="red"> cite </font></a>]
+[ <a href="http://www.internationaljournalisar.org/IJMR/Volume1/Issue1/IJAC-V1I1P5.pdf" target="balnk"><font color="red"> PDF </font></a>]
+
+  <div id="9" class="reveal-modal">
+	 <h2>Abstract :-</h2> Chemical compounds that raise the rate of a reaction by lowering the activation energy mandatory are termed the catalyst and it is used to range the transition state. A catalyst is not inspired as part of the reaction method, unlike reactants. By using a catalyst, the method of speeding up a reaction is so-called Catalysis. With instances of each kind this page looks at the dissimilar kinds of catalyst (heterogeneous and homogeneous), and clarifications of how they work. You will also find a description of instance - autocatalysis - a reaction which is catalysed by one of its products.<br /><strong><font color="red">Key word :-  </font></strong>Photochemical, Textile Industries, Wastewater treatment, oxidation process, mineralization.</p>
+			<a class="close-reveal-modal">&#215;</a>
+	  </div>
+        <div id="10" class="reveal-modal">
+	<img src="http://www.ijretjournal.org/images/IJRET-citation.gif" alt="IJRET" title="IJRET citation" width="80"  height="10" >
+
+			<strong></strong><p class="bord"><font size ="3">Anuradha Teotia, Dr. M. S. Baghel, <font color="red"><em><strong>"Photochemical Treatments of Textile Industries Wastewater"</em></font></strong> Vol. 1 - Issue 1 ( Sep - Oct 2016), <strong>ISAR International Journal of Advances in chemistry</strong> , ISSN: Under Process , www.internationaljournalisar.org</font></p>
+  			<a class="close-reveal-modal">&#215;</a>
+
+
+	  </div></div></td>
+
+          <td style="width: 100.6pt; border: 1pt solid black; padding: 0in 5.4pt;" valign="top" width="0"><div align="center"><strong>25-31</strong></div></td>
+        </tr>-->
+
+
+
+      </table>
+
+<br/><br/>
+
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+<div class="sitePopUp">
+	<button type="button" id="closeSitePopUp"></button>
+	<a href="http://www.internationaljournalisar.org/Journals.html" target="">
+		<div class="sitePopUpInner">
+			<b style="font-size:15px;color:#CB0707;">ISAR- Journals</font></b><br>
+
+			<center style="margin-top:10px;"><img src="http://www.internationaljournalisar.org/images/paper.gif" width="75%" hieght="50%" /></center>
+<center><img src="http://www.internationaljournalisar.org/images/enter.gif" alt="Click Here" /></center>
+			<!--<b style="font-size:13px;color:#0B0B61;">ISAR -  Journals</b>-->
+		</div>
+	</a>
+</div>
+
+
+
+  <div class="copyright">
+    <p>Copyright &copy;2016 <a href="http://www.internationaljournalisar.org" target="blank"><font size="1"> ISAR - International Scientific And Research Group</font></a>, All rights reserved </font></p>
+  </div>
+</footer></body>
+</html>
